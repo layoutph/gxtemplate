@@ -1,3 +1,8 @@
-class Gxtemplate {
-	
+<?php
+
+class gxTemplate {
+	public $yes;
 }
+
+
+?>
