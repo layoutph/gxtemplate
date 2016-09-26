@@ -1,13 +1,11 @@
+<?php include('config.php'); ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Test Gx Tepmlates</title>
+	<title><?php echo $mysite -> site_name; ?></title>
+	<link rel="stylesheet" href="style.php">
 </head>
 <body>
-<?php
-
-include('config.php');
-
-?>
+<?php $mysite -> gxDisplaySiteData(); ?>
 </body>
 </html>

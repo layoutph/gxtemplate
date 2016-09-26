@@ -3,6 +3,8 @@
 class gxSiteData {
 	public $site_name;
 	public $site_description;
+	public $site_color;
+	public $site_backgroundColor;
 
 	public function gxSetSiteData( $site_name, $site_description ) {
 		$this -> site_name = $site_name;
@@ -12,6 +14,8 @@ class gxSiteData {
 	public function gxDisplaySiteData() {
 		echo $this -> site_name;
 	}
+
+	
 
 }
 ?>
