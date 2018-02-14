@@ -1,4 +1,15 @@
-<?php include('config.php'); ?>
+<?php include "gxtemplate.php"; ?>
+
+<?php
+
+$mysite = new gxSiteData;
+$mysite -> site_name = "Blue Magic, Inc.";
+$mysite -> site_description = "Blue Magic Description goes here..";
+$mysite -> site_color = "#ff0000";
+$mysite -> site_backgroundColor = "#000";
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,6 +20,9 @@
 	<link rel="stylesheet" href="style.php">
 </head>
 <body>
-<?php $mysite -> gxDisplaySiteData(); ?>	
+<?php 
+$mysite -> gxBNav();
+?>
+
 </body>
 </html>
